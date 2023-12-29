@@ -30,6 +30,11 @@ kubectl delete -f k8s-csi-s3/deploy/kubernetes/examples/pvc.yaml
 ```
 - Let's test whether making pvc or not
 
+## local-path-provisioner
+```bash
+kubectl apply -f https://raw.githubusercontent.com/rancher/local-path-provisioner/v0.0.26/deploy/local-path-storage.yaml
+```
+
 # Install kubeflow on Kubernetes Cluster
 ```bash
 git remote add kubeflow https://github.com/kubeflow/manifests.git
