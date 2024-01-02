@@ -14,7 +14,7 @@ helm install csi-s3 yandex-s3/csi-s3 \
     --set secret.secretKey='<aws-secertkey>' \
     --set secretendpoint='https://s3.<region>.amazonaws.com' \
     --set storageClass.singleBucket='<s3-bucketname>' \
-    --set storageClass.mountOptions='-o allow_other --memory-limit 1000 --dir-mode 4777 --file-mode 4777'
+    --set storageClass.mountOptions='-o allow_other --memory-limit 1000 --dir-mode 0777 --uid 999 --gid 999'
 ```
 - [k8s-csi-s3 reference](https://github.com/yandex-cloud/k8s-csi-s3/tree/v0.40.0?tab=readme-ov-file)
 - s3 storage is cheaper than other cloud system and construct easiler than other platform
