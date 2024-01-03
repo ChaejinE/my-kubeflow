@@ -13,7 +13,7 @@ storageClass:
   # Name
   name: csi-s3
   # Use a single bucket for all dynamically provisioned persistent volumes
-  singleBucket: "lotto-test2"
+  singleBucket: "recon-kubeflow-bucket"
   # mounter to use - either geesefs, s3fs or rclone (default geesefs)
   mounter: geesefs
   # GeeseFS mount options
